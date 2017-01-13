@@ -13,6 +13,7 @@ description: > # this means to ignore newlines until "baseurl:"
   check back often as I add new content. I am currently finishing my 
   final year at The University of Colorado Boulder working on a degree
   in Electrical and Computer Engineering.
+
 python del powerline_setup
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.brian-douglass.com" # the base hostname & protocol for your site
