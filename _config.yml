@@ -15,7 +15,7 @@ description: > # this means to ignore newlines until "baseurl:"
   in Electrical and Computer Engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://www.brian-douglass.com" # the base hostname & protocol for your site
-twitter_username: @brianmdouglass
+twitter_username: brianmdouglass
 github_username:  briandouglass
 
 # Build settings
