@@ -20,5 +20,3 @@ github_username:  briandouglass
 
 # Build settings
 markdown: kramdown
-
-theme: jekyll-theme-hacker
