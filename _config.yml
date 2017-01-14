@@ -6,11 +6,11 @@
 # 'jekyll serve'. If you change this file, please restart the server process.
 
 # Site settings
-title: Welcome To My Website 
+title: Welcome To My Website
 email: Brian.Douglass@mac.com
 description: > # this means to ignore newlines until "baseurl:"
-  Hello! My name is Brian This is my first try at a website so please
-  check back often as I add new content. I am currently finishing my 
+  Hello! My name is Brian. This is my first try at a website so please
+  check back often as I add new content. I am currently finishing my
   final year at The University of Colorado Boulder working on a degree
   in Electrical and Computer Engineering.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -21,5 +21,5 @@ github_username:  briandouglass
 # Build settings
 markdown: kramdown
 
-#Theme 
+#Theme
 theme: jekyll-theme-hacker
