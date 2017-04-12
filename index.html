@@ -1,23 +1,174 @@
----
-layout: default
----
+<!DOCTYPE html>
+<html style="background-color: DarkCyan">
+<!-- This is a comment! -->
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link id="main-sheet" rel="stylesheet" href="assets/css/bootstrap.min.css">
 
-<div class="home">
+    <link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+    <title>
+        MY EXAMPLE WEBPAGE!
+    </title>
 
-  <h1 class="page-heading">Posts</h1>
+</head>
+<!-- <body style="background-color: DarkCyan"> -->
+<body> <!-- style="background-color: #88B04B"> -->
+    <p id="toptitle">Hello There</p>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+    <a href="http://www.kenmare.ie">
+        <center>
+            <img id="ireland" src="https://www.dropbox.com/s/am8fq2c0idptfw9/Ireland.JPG?raw=1"/>
+        </center>
+        <p style="text-align:center">
+            Visit to Ireland
+        </p>
+    </a>
 
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
 
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
+    <!-- Put a button here -->
+    <div>
+        <a href="http://www.brian-douglass.com">Brian</a>
+    </div>
 
-</div>
+    <!-- The Box Model! -->
+    <h2>The Box Model</h2>
+    <img src="https://s3.amazonaws.com/codecademy-blog/assets/ae09140c.png"/>
+    <p>Image courtesy of www.w3.org!</p>
+    <h4>From the codecademy.com lesson</h4>
+    <p class="left">
+        The <b>margin</b> is the space around the element. The larger the margin,
+        the more space between our element and the elements around it. We can
+        adjust the margin to move our HTML elements closer to or farther from each
+        other.
+    </p>
+    <p class="left">
+        The <b>border</b> is the edge of the element. It's what we've been making
+        visible every time we set the border property.
+    </p>
+    <p class="left">
+        The <b>padding</b> is the spacing between the content and the border. We
+        can adjust this value with CSS to move the border closer to or farther
+        from the content.
+    </p>
+    <p class="left">
+        The <b>content</b> is the actual "stuff" in the box. If we're talking
+        about a   element, the "stuff" is the text of the paragraph.
+    </p>
+    <p class="left">
+        You'll see abbreviations like <b>TM</b>, <b>TB</b>, and <b>TP</b> in the
+        diagram. These stand for "top margin," "top border," and "top padding." As
+        we'll see, we can adjust the top, right, left, and bottom padding,
+        border, and margin individually.
+    </p>
+
+    <h2 class="left">
+        Lists
+    </h2>
+    <h3 style="text-align:left">
+        Ordered Lists
+    </h3>
+    <ol style="background:#00668B">
+        <li style="font-family: Helvetica; color: white">
+            First Ordered List Item
+        </li>
+        <li style="font-family: Helvetica; color: white">
+            Second Ordered List Item
+        </li>
+        <li style="font-family: Helvetica; color: white">
+            Third Ordered List Item
+        </li>
+        <li style="font-family: Helvetica; color: white">
+            Forth Ordered List Item
+        </li>
+    </ol>
+    <h3 class="left">
+        Unordered Lists
+    </h3>
+    <ul>
+        <li>Rabbits are annoying.</li>
+        <li>Marines are the best at what they do.</li>
+        <li>Don't Panic!</li>
+        <li>My wife is better than your wife.</li>
+    </ul>
+
+    <h2>
+        Standard Paragraphs
+    </h2>
+    <!-- This is a comment! -->
+    <p>
+        Here is a standard paragraph. This is the default text font, size, and color
+        (black). Below are some examples of other font attributes. I am using span
+        to make <span>these words <emph><strong>BLUE.</strong></emph></span>
+    </p>
+
+    <p style="font-family: Verdana; color: red; font-size: 10px">
+        This paragraph demonstrates a font size change. Here I've set the size to
+        10px which is rather small. Also this is an example of how to change the
+        font to red. Also, it may be difficult to see, but the font is in
+        Verdana.
+    </p>
+
+    <p style="font-family: Garamond; color: green; font-size: 20px">
+        This next paragraph is set in a larger size. This is 20px, and green. This
+        font is set in Garamond.
+    </p>
+    <h1 style="text-align:center">
+        h1-CEO Level Header (and other headers)
+    </h1>
+    <h2 style="text-align:center">
+        h2-VP Level Header
+    </h2>
+    <h3 style="text-align:center">
+        h3-Director Level Header
+    </h3>
+    <h4 style="text-align:center">
+        h4-Manager Level Header
+    </h4>
+    <h5 style="text-align:center">
+        h5-Employee Level Header
+    </h5>
+    <h6 style="text-align:center">
+        h6-Intern Level Header
+    </h6>
+    <h2>
+        Basic Table
+    </h2>
+    <table border="2px" style="background:#ffffff; border-collapse:collapse">
+        <thead>
+            <tr>
+                <th colspan="2" style="border-bottom:1px solid black; color:black">Family Member by Birth Year</th>
+            </tr>
+            <tr style="border-bottom:1px solid black;">
+                <th>Family Member</th>
+                <th style="border-left:1px solid black;">Birth Year</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td style="border-bottom:1px solid white;">Brian</td>
+                <td style="border-left:1px solid black;border-bottom:1px solid white;">1985</td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;">Kacey</td>
+                <td style="border-left:1px solid black;border-bottom:1px solid white;">1985</td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;">Brittany (Sister)</td>
+                <td style="border-left:1px solid black;border-bottom:1px solid white;">1994</td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;">Savannah (Sister)</td>
+                <td style="border-left:1px solid black;border-bottom:1px solid white;">1994</td>
+            </tr>
+            <tr>
+                <td style="border-bottom:1px solid white;">Margot (niece)</td>
+                <td style="border-left:1px solid black;border-bottom:1px solid white;">2015</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
